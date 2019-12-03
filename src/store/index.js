@@ -21,7 +21,7 @@ const modules = modulesFiles.keys().reduce((modules, modulePath) => {
   const value = modulesFiles(modulePath);
   // console.log(value);
   modules[moduleName] = value.default;
-  // console.log(modules);
+  console.log(modules);
   return modules;
 },{})
 

@@ -7,9 +7,9 @@
           </el-breadcrumb> -->
 
           <!-- 自定义图标分隔符 ">" -->
-          <el-breadcrumb separator-class="el-icon-arrow-right">
+          <!-- <el-breadcrumb separator-class="el-icon-arrow-right">
             <el-breadcrumb-item :to="{path: val.path}" v-for="(val, idx) in breadcrumb_list" :key="idx">{{val.name}}</el-breadcrumb-item>
-          </el-breadcrumb>
+          </el-breadcrumb> -->
     </div>
 </template>
 

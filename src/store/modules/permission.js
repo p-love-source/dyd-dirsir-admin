@@ -1,7 +1,8 @@
 // 权限控制状态管理
 
 const state = {
-
+    routes: [],
+    addRoutes: []
 }
 
 const mutations = {

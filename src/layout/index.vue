@@ -1,17 +1,19 @@
 <template>
-  <div class='app-wrapper'>
+  <div class='app-wrapper flex'>
       <!-- 侧边菜单栏 -->
       <div class="side-continer">
-
+        <side-bar />
       </div>
       <!-- 右边内容区 -->
       <div class="main-continer">
+          <!-- 顶部 -->
+          <header-bar />
           <!-- 面包屑 -->
           <break-crumb class="breakcrumb-continer" />
           <!-- list视窗 -->
           <app-main />
           <!-- 右边悬浮设置 -->
-          <right-panel v-if="showSettings">
+          <right-panel>
             <settings />
           </right-panel>
       </div>
@@ -24,6 +26,7 @@ import BreakCrumb from "@/components/BreakCrumb";
 import RightPanel from "@/components/RightPanel";
 
 import { mapState } from "vuex";
+
 export default {
   name: 'Layout',
   data(){

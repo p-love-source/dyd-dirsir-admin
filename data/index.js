@@ -7,14 +7,14 @@
 
 // export default requireAll(reqJson);
 
-const jsonNames = ["user", "user_verify", "role", "role_edit", "auth", "slider"];
+// const jsonNames = ["user", "user_verify", "role", "role_edit", "auth", "sidebar"];
 
 const user = require("./json/user.json");
 const user_verify = require("./json/user_verify.json");
 const role = require("./json/role.json");
 const role_edit = require("./json/role_edit.json");
 const auth = require("./json/auth.json");
-const slider = require("./json/slider.json");
+const sidebar = require("./json/sidebar.json");
 
 const userFunc = (app) => app.get("/user", (req, res) => {
     res.json(user);
@@ -36,8 +36,8 @@ const authFunc = (app) => app.get("/auth", (req, res) => {
     res.json(auth);
 })
 
-const sliderFunc = (app) => app.get("/slider", (req, res) => {
-    res.json(slider);
+const sidebarFunc = (app) => app.get("/sidebar", (req, res) => {
+    res.json(sidebar);
 })
 
 function reqFunc(app) {
@@ -46,7 +46,7 @@ function reqFunc(app) {
     roleFunc(app);
     roleEditFunc(app);
     authFunc(app);
-    sliderFunc(app);
+    sidebarFunc(app);
 }
 
 
